@@ -1,5 +1,4 @@
-@extends('layouts.master-ar')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 
 <section id="inner-headline">
@@ -76,22 +75,22 @@
 
 
 
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/1.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/2.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/3.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/4.jpeg')}}" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/1.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/2.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/3.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/4.jpeg')); ?>" class="img-responsive" alt="" /> </div>
     </div><br>
     <div class="row">
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/5.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/6.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/7.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/8.jpeg')}}" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/5.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/6.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/7.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/8.jpeg')); ?>" class="img-responsive" alt="" /> </div>
     </div><br>
     <div class="row">
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/9.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/10.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/11.jpeg')}}" class="img-responsive" alt="" /> </div>
-        <div class="col-lg-3"> <img src="{{asset('img/about_us/12.jpeg')}}" class="img-responsive" alt="" />
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/9.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/10.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/11.jpeg')); ?>" class="img-responsive" alt="" /> </div>
+        <div class="col-lg-3"> <img src="<?php echo e(asset('img/about_us/12.jpeg')); ?>" class="img-responsive" alt="" />
         </div>
     </div><br>
 
@@ -100,4 +99,5 @@
 </div>
 </div>
 <br><br><br><br><br><br>
-@endsection 
+<?php $__env->stopSection(); ?> 
+<?php echo $__env->make('layouts.master-ar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
